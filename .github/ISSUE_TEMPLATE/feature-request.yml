@@ -7,7 +7,7 @@ body:
     attributes:
       label: Describe the feature
       description: Clearly explain what you'd like to see added or improved
-      placeholder: As a <admin/archivist/user> I would like a feature that allows me to...
+      placeholder: As an admin/archivist/user I would like a feature that allows me to...
     validations:
       required: true
   - type: textarea

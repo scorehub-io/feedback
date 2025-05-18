@@ -5,12 +5,11 @@ body:
   - type: markdown
     attributes:
       value: |
-        You can paste screenshots into the form fields. Tip: Use Win+Shift+S on Windows and paste directly into the form.
+        Tip: Use `Win+Shift+S` on Windows and paste directly into the form.
   - type: textarea
     id: description
     attributes:
       label: "Description"
-      description: "Describe the bug."
   - type: textarea
     id: repro
     attributes:
@@ -44,10 +43,10 @@ body:
     attributes:
       label: What browser are you experiencing the problem on?
       options:
-        - Firefox
         - Chrome
         - Safari
         - Edge
+        - Firefox
         - Other Chromium-based (Vivaldi, Opera, Brave etc.)
         - Other/don't know
     validations:
@@ -55,7 +54,7 @@ body:
   - type: checkboxes
     id: pages
     attributes:
-      label: What pages are you experiencing the problem on? (Optional)
+      label: What pages are you experiencing the problem on?
       description: You may select more than one.
       options:
         - label: Home
