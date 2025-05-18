@@ -1,0 +1,78 @@
+name: "Bug report"
+description: "File a bug report for scorehub.io"
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        You can paste screenshots into the form fields. Tip: Use Win+Shift+S on Windows and paste directly into the form.
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "Describe the bug."
+  - type: textarea
+    id: repro
+    attributes:
+      label: "Reproduction steps"
+      description: "How do you trigger this bug? Please walk us through it step by step so we can reproduce the issue."
+      value: |
+        1.
+        2.
+        3.
+        ...
+        
+        Expected result:
+        Actual result:
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: What platform are you experiencing the problem on?
+      options:
+        - Windows
+        - Mac
+        - iOS
+        - Android
+        - Linux
+        - Other/don't know
+    validations:
+      required: true
+  - type: dropdown
+    id: browser
+    attributes:
+      label: What browser are you experiencing the problem on?
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Edge
+        - Other Chromium-based (Vivaldi, Opera, Brave etc.)
+        - Other/don't know
+    validations:
+      required: true
+  - type: checkboxes
+    id: pages
+    attributes:
+      label: What pages are you experiencing the problem on? (Optional)
+      description: You may select more than one.
+      options:
+        - label: Home
+        - label: Login
+        - label: Registration
+        - label: Forgot password
+        - label: Email verification
+        - label: Library invitation
+        - label: Create library
+        - label: Profile
+        - label: Personal settings
+        - label: Library settings
+        - label: Library
+        - label: Share
+        - label: Print
+        - label: Download
+        - label: Composition details
+        - label: Composition/PDF editor
+        - label: Members
+        - label: Other

@@ -1,0 +1,37 @@
+name: "Feature request"
+description: "Request a new feature for scorehub.io"
+labels: ["feature"]
+body:
+  - type: textarea
+    id: feature
+    attributes:
+      label: Describe the feature
+      description: Clearly explain what you'd like to see added or improved
+      placeholder: As a <admin/archivist/user> I would like a feature that allows me to...
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why is this feature important?
+      description: What problem does this solve, or what value does it bring?
+    validations:
+      required: false
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Are there any workarounds you've tried?
+      description: If there’s a way you’re currently handling this, describe it here.
+    validations:
+      required: false
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this to you?
+      options:
+        - High – I need this right now
+        - Medium – It’s important but not urgent
+        - Low – Nice to have
+    validations:
+      required: false
